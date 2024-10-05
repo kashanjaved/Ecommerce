@@ -1,0 +1,136 @@
+.shop-category-container {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* Title styling */
+.shop-category-container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Center align the title */
+}
+
+.banner-image {
+        width: 1000px
+}
+
+
+/* Horizontal rule styling */
+.shop-category-container hr {
+    width: 50%; /* Use percentage for better responsiveness */
+    border: 2px solid black;
+    margin: 0 auto; /* Center the hr line */
+}
+
+.shop-category-para p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shop-category-dropdown {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.shop-category-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Product item styling */
+.collection-item {
+    width: 150px;
+    transition: transform 0.5s;
+}
+
+.collection-item img {
+    width: 100%; /* Image adjusts within the item */
+}
+
+/* Price styling */
+.collection-item-price-old {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.collection-item-price-new {
+    font-weight: 700;
+}
+
+/* Hover effect */
+.collection-item:hover {
+    transform: scale(1.09);
+}
+
+.shop-category-products a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with max width of 1024px (Tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    .shop-category-products {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+
+    .shop-category-container h1 {
+        font-size: 40px; /* Reduce title size */
+    }
+
+    .shop-category-container hr {
+        width: 300px; /* Adjust hr width */
+    }
+}
+
+/* For screens with max width of 768px (Tablets) */
+@media (max-width: 768px) {
+    .shop-category-products {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+
+    .shop-category-container h1 {
+        font-size: 35px; /* Further reduce title size */
+    }
+
+    .shop-category-container hr {
+        width: 250px; /* Adjust hr width */
+    }
+
+    .collection-item {
+        width: 80%; /* Ensure items scale appropriately */
+    }
+    .banner-image{
+        width: 600px
+    }
+}
+
+/* For screens with max width of 480px (Mobile phones) */
+@media (max-width: 480px) {
+    .shop-category-products {
+        grid-template-columns: 1fr; /* 1 item per row */
+        margin-left: 0; /* Remove margin */
+    }
+
+    .shop-category-container h1 {
+        font-size: 30px; /* Adjust title size */
+    }
+
+    .shop-category-container hr {
+        width: 200px; /* Adjust hr width */
+        margin: 0 auto; /* Center the hr line */
+    }
+
+    .collection-item {
+       margin-left: 20px;
+        width: 80%; /* Ensure items scale */
+    }
+
+    .banner-image{
+        width: 400px;
+}
+}

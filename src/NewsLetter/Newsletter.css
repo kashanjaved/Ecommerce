@@ -1,0 +1,142 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22, #e1ffea22 60%);
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 30vh;
+    margin-top: 30px;
+    margin-left: 150px;
+    gap: 20px;
+}
+
+/* Heading */
+.letter-heading h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Input Section */
+.letter-input p {
+    font-size: 20px;
+    font-weight: 500;
+    color: grey;
+}
+
+.letter-email {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.letter-email input {
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0.5px solid black;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.letter-email button {
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens with max width of 1024px (Tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    .newsletter {
+        width: 90vw;
+        height: auto; /* Allow height to adjust based on content */
+        margin-left: 50px; /* Adjust margins for smaller screens */
+        gap: 15px;
+    }
+
+    .letter-heading h1 {
+        font-size: 40px; /* Adjust title size */
+    }
+
+    .letter-input p {
+        font-size: 18px; /* Adjust input text size */
+    }
+
+    .letter-email input {
+        width: 250px; /* Reduce width of input for smaller screens */
+    }
+
+    .letter-email button {
+        width: 90px;
+        height: 35px;
+        font-size: 14px; /* Adjust button size and text */
+    }
+}
+
+/* For small screens with max width of 768px (Mobile and tablets) */
+@media (max-width: 768px) {
+    .newsletter {
+        width: 100vw;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .letter-heading h1 {
+        font-size: 35px; /* Further adjust title size */
+    }
+
+    .letter-input p {
+        font-size: 16px; /* Adjust input description text */
+    }
+
+    .letter-email {
+        flex-direction: column; /* Stack input and button vertically */
+        gap: 10px;
+    }
+
+    .letter-email input {
+        width: 100%; /* Make input take full width of screen */
+    }
+
+    .letter-email button {
+        width: 100%; /* Button takes full width */
+    }
+}
+
+/* For extra small screens with max width of 480px (Mobile phones) */
+@media (max-width: 480px) {
+    .newsletter {
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .letter-heading h1 {
+        font-size: 28px; /* Smaller font size for heading */
+    }
+
+    .letter-input p {
+        font-size: 14px; /* Smaller text for input description */
+    }
+
+    .letter-email input {
+        width: 100%; /* Full width input */
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .letter-email button {
+        width: 100%; /* Full width button */
+        height: 35px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,104 @@
+.collection-container h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Centered heading */
+    padding-top: 0%;
+}
+
+.collection-container hr {
+    width: 470px;
+    border: 2px solid black;
+    margin: 0 auto; /* Center the horizontal line */
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 10px;
+    align-items: center;
+    justify-content: center; /* Center the grid items horizontally */
+    margin-top: 10px;
+    margin-left: auto;  /* Automatically center the grid horizontally */
+    width: 90%; /* Adjust the width to ensure there's room for centering */
+}
+/* New Collections Heading */
+.new-collections h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Centered heading */
+    padding-top: 0%;
+}
+
+/* Collection Item Styles */
+.collection-item {
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.collection-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.collection-item-list {
+    display: flex;
+}
+
+.collection-item-price-old {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.collection-item-price-new {
+    font-weight: 700;
+}
+
+.collection-item:hover {
+    transform: scale(1.09);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with max width of 768px (Tablets) */
+@media (max-width: 768px) {
+    .collections {
+        grid-template-columns: repeat(2, 1fr); /* 2 items in one row */
+        margin-left: auto; /* Center the grid */
+        margin-right: auto; /* Center the grid */
+        padding: 0 15px; /* Add padding for spacing */
+    }
+
+    .collection-container h1 {
+        font-size: 36px; /* Adjust heading size for smaller screens */
+    }
+
+    .collection-container hr {
+        width: 80%; /* Make horizontal line responsive */
+    }
+
+    .collection-item {
+        width: auto; /* Allow items to adjust based on grid */
+    }
+}
+
+/* For screens with max width of 480px (Mobile devices) */
+@media (max-width: 480px) {
+    .collections {
+        grid-template-columns: 1fr; /* 1 item in one row */
+        margin-left: auto; /* Center the grid */
+        margin-right: auto; /* Center the grid */
+        padding: 0 15px; /* Add padding for spacing */
+    }
+
+    .collection-container h1 {
+        font-size: 28px; /* Further decrease heading size */
+    }
+
+    .collection-container hr {
+        width: 90%; /* Make horizontal line more responsive */
+    }
+
+    .collection-item {
+        width: auto; /* Allow items to adjust based on grid */
+    }
+}

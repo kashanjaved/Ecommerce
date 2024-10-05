@@ -1,0 +1,43 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.cart-list {
+    display: flex;
+    gap: 20px;
+    margin: 10px;
+    flex-direction: row;
+    background-color: transparent;
+    
+}
+
+.cart-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.cart-details {
+    padding-top: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.new-price {
+    color: red;
+    font-weight: 800;
+}
+.cart-list button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(139, 7, 7);
+    cursor: pointer;
+}

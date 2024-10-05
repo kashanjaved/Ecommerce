@@ -1,0 +1,104 @@
+.offers {
+    display: flex;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22, #e1ffea22 60%);
+    height: auto; /* Change to auto for better flexibility */
+    margin-top: 30px;
+    justify-content: center;
+    width: 80vw;
+    margin-left: auto; /* Center the container */
+    margin-right: auto; /* Center the container */
+    padding: 20px; /* Add padding for better spacing */
+    flex-direction: column; /* Allow stacking on smaller screens */
+    align-items: center; /* Center items vertically */
+}
+
+/* Offer Left Styling */
+.offer-left {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the text */
+    line-height: 40px;
+    padding-top: 30px; /* Reduced padding for better alignment */
+    text-align: center; /* Center text */
+}
+
+.offer-left h1 {
+    font-size: 26px; /* Adjust font size for better readability */
+    margin-bottom: 20px; /* Space between heading and button */
+}
+
+.offer-left button {
+    align-items: center;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    height: 40px; /* Increased height for better touch target */
+    background: #f52e2e;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for readability */
+}
+
+/* Offer Right Styling */
+.offer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-right img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Set a max width for larger screens */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with max width of 768px (Tablets and small devices) */
+@media (max-width: 768px) {
+    .offers {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .offer-left {
+        line-height: 30px; /* Adjust line-height for better spacing */
+        padding-top: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .offer-left h1 {
+        font-size: 22px; /* Decrease heading size for tablets */
+    }
+
+    .offer-left button {
+        width: 120px; /* Reduce button width */
+        height: 35px; /* Reduce button height */
+        font-size: 14px; /* Decrease font size */
+    }
+
+    .offer-right img {
+        max-width: 80%; /* Allow image to take more width */
+    }
+}
+
+/* For screens with max width of 480px (Mobile phones) */
+@media (max-width: 480px) {
+    .offers {
+        padding: 10px; /* Maintain padding */
+    }
+
+    .offer-left h1 {
+        font-size: 20px; /* Further decrease heading size */
+    }
+
+    .offer-left button {
+        width: 100px; /* Further reduce button width */
+        height: 30px; /* Further reduce button height */
+        font-size: 12px; /* Further decrease font size */
+    }
+
+    .offer-right img {
+        max-width: 90%; /* Allow image to take even more width */
+    }
+}

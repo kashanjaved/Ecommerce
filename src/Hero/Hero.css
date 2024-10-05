@@ -1,0 +1,150 @@
+.hero {
+    display: flex;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 , #e1ffea22 60%);
+    height: 90vh;
+}
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2 {
+    color: black;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero-left p {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 700;
+}
+.hero-hand-icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.hero-hand-icon img {
+    width: 80px;
+}
+.hero-latest-btn {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero-right img {
+    width: 60%;
+    height: 500px;
+}
+
+@media (max-width: 820px) {
+    .hero{
+       height: auto;
+    }
+    .hero-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 180px;
+    }
+    .hero-right{
+      
+        display: flex;
+    justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: row; /* Stack hero left and right */
+        height: auto; /* Adjust height to fit content */
+        padding: 20px;
+    }
+
+    .hero-left {
+        padding-left: 30px; /* Reduce padding */
+        text-align: left; /* Center text */
+     /* Add padding on both sides */
+    }
+
+    .hero-left h2 {
+        font-size: 15px; /* Increase font size on smaller screens */
+    }
+
+    .hero-left p {
+        font-size: 20px; /* Adjust text size for smaller screens */
+    }
+
+    .hero-hand-icon img {
+        width: 5vw; /* Adjust size based on screen width */
+    }
+
+    .hero-latest-btn {
+        width: 100px;
+        height: 40px;
+        font-size: 8px; /* Increase font size for smaller screens */
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    .hero-right img {
+        width: 200px; /* Adjust width */
+        height: 200px;
+        padding-right: 60px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+        height: auto;
+    }
+
+    .hero-left {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 0%;
+    }
+
+    .hero-left h2 {
+        font-size: 6vw;
+    }
+
+    .hero-left p {
+        font-size: 8.5vw;
+    }
+
+    .hero-hand-icon img {
+        width: 15vw; /* Increase size for better visibility */
+    }
+
+    .hero-latest-btn {
+        width: 250px;
+        height: 30px;
+        font-size: 4.5vw; /* Increase font size */
+    }
+
+    .hero-right img {
+        width: 170px;
+        height: 250px;
+    }
+}

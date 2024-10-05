@@ -1,0 +1,107 @@
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row on large screens */
+    gap: 10px;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+/* Item Title */
+.item-title h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center; /* Center align the title */
+    padding-top: 0%;
+}
+
+.item-title hr {
+    width: 50%; /* Use percentage for responsiveness */
+    border: 2px solid black;
+    margin: 0 auto; /* Center the line */
+}
+
+/* Item Styling */
+.item {
+    width: 100%; /* Make item take full width of container */
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+.item img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Set a max width to prevent excessive stretching */
+}
+
+.item-list {
+    display: flex;
+}
+
+.item-price-old {
+    text-decoration: line-through;
+    color: #b0b0b0;
+}
+
+.item-price-new {
+    font-weight: 700;
+}
+
+.item:hover {
+    transform: scale(1.09);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with max width of 1024px (Tablets and smaller laptops) */
+@media (max-width: 1024px) {
+    .item-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on smaller screens */
+    }
+
+    .item-title h1 {
+        font-size: 40px; /* Adjust title size for smaller screens */
+    }
+
+    .item-title hr {
+        width: 300px; /* Adjust width of the hr line */
+    }
+}
+
+/* For screens with max width of 768px (Tablets and small devices) */
+@media (max-width: 768px) {
+    .item-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on smaller screens */
+    }
+
+    .item-title h1 {
+        font-size: 35px; /* Adjust title size for tablets */
+    }
+
+    .item-title hr {
+        width: 250px; /* Adjust hr width for tablets */
+    }
+}
+
+/* For screens with max width of 480px (Mobile phones) */
+@media (max-width: 480px) {
+    .item-container {
+        grid-template-columns: 1fr; /* 1 item per row on mobile screens */
+        margin-left: 0; /* Remove unnecessary margin */
+    }
+
+    .item-title h1 {
+        font-size: 30px; /* Adjust title size for mobile */
+    }
+
+    .item-title hr {
+        width: 200px; /* Narrow the hr line for mobile */
+        margin: 0 auto; /* Center the hr */
+    }
+
+    .item {
+        width: 100%; /* Ensure the items adjust fully to screen width */
+    }
+}
