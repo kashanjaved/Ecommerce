@@ -24,7 +24,7 @@ const ShopContextProvider = (props) => {
 
         <ShopContext.Provider value={contextValue} >
             {props.children}
-        </ShopContext.Provider>
+        </ShopContext.Provider> 
 
 
 

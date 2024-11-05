@@ -1,12 +1,18 @@
+
+.navbar-container{
+    background-color: #f5f5f5;
+
+}
 .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f5f5f5;
-    padding: 0px 5vw;  /* Use viewport width for responsive padding */
-    height: 80px;  /* Adjusted height to be smaller on smaller screens */
+     /* padding: 0px 5vw;   */
+    height: 80px;   
     box-sizing: border-box;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 .logo {

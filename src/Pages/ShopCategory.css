@@ -1,6 +1,8 @@
 .shop-category-container {
     margin-left: 15px;
     margin-top: 10px;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 /* Title styling */

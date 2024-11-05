@@ -1,7 +1,10 @@
 .cart-container {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+
 }
 
 .cart-list {
@@ -10,7 +13,7 @@
     margin: 10px;
     flex-direction: row;
     background-color: transparent;
-    
+     
 }
 
 .cart-list img {
